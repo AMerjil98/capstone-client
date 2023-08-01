@@ -23,10 +23,11 @@ export default function IndexPage() {
   const getPosts = () => {
     axios.get('https://vidyanews-2dd3196bd5f5.herokuapp.com/post')
     .then(response => {
-
+        
         setPosts(response.data);
       });
   }
+  console.log(posts)
 
   useEffect(() => {
    getPosts()
@@ -35,7 +36,7 @@ export default function IndexPage() {
   return (
     <div>
       {posts.length > 0 && posts.map(post => (
-        <Post {...post} />
+        <Post {...post} key={post._id} />
       ))}
     </div>
   );
