@@ -1,0 +1,70 @@
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #534e75;
+  .post-text {
+    margin: 0;
+    font-size: 1.8rem;
+    .info {
+      margin: 6px 0;
+      color: #888;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .summary {
+      margin: 10px 0;
+      line-height: 1.4rem;
+      color: #2e1c1d;
+    }
+    .content{
+      color: #2e1c1d;
+    }
+  }
+}
+
+.post-page {
+  a {
+    color: #4f4e4e;
+    text-decoration: underline;
+  }
+  a.edit-btn {
+    background-color: #4f4e4e;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 75px;
+    width: 250px;
+    margin-top: 5px;
+  }
+  h1 {
+    text-align: center;
+    margin: 10px 0 5px;
+    color: #aaa;
+  }
+  time {
+    text-align: center;
+    display: block;
+    color: #aaa;
+  }
+  .edit-row {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .content {
+    color: #aaa;
+  }
+}
+svg {
+  height: 50px;
+}
